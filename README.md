@@ -222,13 +222,3 @@ npm run seed:events
 
 ---
 
-## Why this is a good interview talk-track
-
-- **Auth & security**: JWT + bcrypt + role-based middleware, explainable in under a minute.
-- **Data modeling**: seats are embedded inside the `Event` document for atomic, race-safe updates —
-  a good example of thoughtful MongoDB schema design (embedding vs. referencing trade-off).
-- **Concurrency handling**: seat booking uses `findOneAndUpdate` with array filters plus a re-fetch
-  verification step, demonstrating an understanding of race conditions in booking systems.
-- **Clean REST API**: consistent controller/route/model/middleware separation, easy to walk through.
-- **End-to-end feature**: a real user journey (browse → seats → pay → QR ticket → history → cancel)
-  that's easy to demo live.
